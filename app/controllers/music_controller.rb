@@ -1,5 +1,5 @@
 class MusicController < ApplicationController
-  def show
-    render json: "{test: 'test'}"
+  def index
+    render json: {test:  ENV['SPOTIFY_CLIENT_ID']}
   end
 end
